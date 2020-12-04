@@ -9,13 +9,21 @@
 
   <name>funny-bot</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://funnybot.hirschfeld.tech</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
+
+  <repositories>
+    <repository>
+      <id>jcenter</id>
+      <name>jcenter-bintray</name>
+      <url>https://jcenter.bintray.com</url>
+    </repository>
+  </repositories>
 
   <dependencies>
     <dependency>
@@ -23,6 +31,11 @@
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.dv8tion</groupId>
+      <artifactId>JDA</artifactId>
+      <version>4.2.0_222</version>
     </dependency>
   </dependencies>
 
