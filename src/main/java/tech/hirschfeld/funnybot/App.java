@@ -7,6 +7,7 @@ import javax.security.auth.login.LoginException;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
+import tech.hirschfeld.funnybot.events.handler.EventListener;
 
 /**
  * Hello world!
