@@ -6,12 +6,9 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.reflections.Reflections;
-
 import net.dv8tion.jda.api.events.guild.GenericGuildEvent;
 import net.dv8tion.jda.api.events.message.priv.PrivateMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import tech.hirschfeld.funnybot.events.utils.GuildEventListener;
 import tech.hirschfeld.funnybot.events.utils.GuildSpecificListenerAdapter;
 
 public class EventListener extends ListenerAdapter {
@@ -21,7 +18,7 @@ public class EventListener extends ListenerAdapter {
 
     public EventListener() {
         //prepare the specific Guild handler.
-        Reflections reflections = new Reflections("tech.hirschfeld.funnybot.events.handler.guildspecific");
+        /*Reflections reflections = new Reflections("tech.hirschfeld.funnybot.events.handler.guildspecific");
         Set<Class<?>> annotatedClasses = reflections.getTypesAnnotatedWith(GuildEventListener.class);
 
         ArrayList<GuildSpecificListenerAdapter> annotatedGuildSpecificListeners = new ArrayList<>(annotatedClasses.size());
@@ -43,7 +40,8 @@ public class EventListener extends ListenerAdapter {
                 e.printStackTrace();
             }
         }
-        guildSpecificListener = annotatedGuildSpecificListeners.toArray(new GuildSpecificListenerAdapter[annotatedGuildSpecificListeners.size()]);
+        guildSpecificListener = annotatedGuildSpecificListeners.toArray(new GuildSpecificListenerAdapter[annotatedGuildSpecificListeners.size()]);*/
+        guildSpecificListener = new GuildSpecificListenerAdapter[] {};
     }
 
     /**

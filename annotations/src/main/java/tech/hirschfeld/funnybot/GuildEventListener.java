@@ -1,4 +1,4 @@
-package tech.hirschfeld.funnybot.events.utils;
+package tech.hirschfeld.funnybot;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
